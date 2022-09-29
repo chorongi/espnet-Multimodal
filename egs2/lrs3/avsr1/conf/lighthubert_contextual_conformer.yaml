@@ -48,7 +48,7 @@ frontend_conf:
 
 preencoder: linear
 preencoder_conf:
-    input_size: 1024  # Note: If the upstream is changed, please change this value accordingly.
+    input_size: 768  # Note: If the upstream is changed, please change this value accordingly.
     output_size: 80
 
 model_conf:

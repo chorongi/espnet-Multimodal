@@ -98,9 +98,10 @@ class ESPnetAVSRModel(AbsESPnetModel):
         self.encoder = encoder
 
         # Multimodal Related
-        self.vision_encoder = vision_encoder
         self.audio_input = audio_input
         self.vision_input = vision_input
+        if self.vision_input:
+            self.vision_encoder = vision_encoder
         self.stack_order = stack_order
         self.avg_pool_width = avg_pool_width
         self.fusion_stage = fusion_stage
@@ -404,7 +405,7 @@ class ESPnetAVSRModel(AbsESPnetModel):
         if self.unimodal:
             # Unimodal case
             if self.audio_input:
-                feats, feats_lengths = feats, feats_lengths
+                feats, feats_lengths = audio_feats, audio_lengths
             if self.vision_input:
                 feats, feats_lengths = vision_feats, vision_lengths
 
@@ -417,7 +418,7 @@ class ESPnetAVSRModel(AbsESPnetModel):
 
         # Multimodal Fusion Step
         if not self.unimodal and self.fusion_stage == "frontend":
-            feats, feats_lenghts = self.fuser.fuse(feats, vision_feats, feats_lengths)
+            feats, feats_lengths = self.fuser.fuse(feats, vision_feats, feats_lengths)
 
         # 3-2. Pre-encoder, e.g. used for raw input data
         if self.preencoder is not None:
