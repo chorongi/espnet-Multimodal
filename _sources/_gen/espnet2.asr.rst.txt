@@ -48,17 +48,6 @@ espnet2.asr.ctc
     :show-inheritance:
 
 
-.. _espnet2.asr.espnet_avsr_model:
-
-espnet2.asr.espnet_avsr_model
------------------------------
-
-.. automodule:: espnet2.asr.espnet_avsr_model
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
 .. _espnet2.asr.maskctc_model:
 
 espnet2.asr.maskctc_model
@@ -76,17 +65,6 @@ espnet2.asr.__init__
 --------------------
 
 .. automodule:: espnet2.asr.__init__
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
-.. _espnet2.asr.vision_encoder:
-
-espnet2.asr.vision_encoder
---------------------------
-
-.. automodule:: espnet2.asr.vision_encoder
     :members:
     :undoc-members:
     :show-inheritance:

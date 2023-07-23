@@ -49,10 +49,14 @@
               <p><span class="caption-text">Tutorial:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Common usages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../parallelization.html">Using job scheduling system</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker.html">Docker</a></li>
+</ul>
+<p><span class="caption-text">ESPnet1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../espnet1_tutorial.html">Usage</a></li>
 </ul>
 <p><span class="caption-text">ESPnet2:</span></p>
 <ul>
@@ -330,6 +334,116 @@ that of the dataset as they are.</p>
 </section>
 <section id="espnet2-train-dataset-1">
 <span id="espnet2-train-dataset"></span><h2>espnet2.train.dataset<a class="headerlink" href="#espnet2-train-dataset-1" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-espnet2.train.dataset"></span><dl class="class">
+<dt id="espnet2.train.dataset.AbsDataset">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">AbsDataset</code><a class="reference internal" href="../_modules/espnet2/train/dataset.html#AbsDataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AbsDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="method">
+<dt id="espnet2.train.dataset.AbsDataset.has_name">
+<em class="property">abstract </em><code class="sig-name descname">has_name</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/espnet2/train/dataset.html#AbsDataset.has_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AbsDataset.has_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="espnet2.train.dataset.AbsDataset.names">
+<em class="property">abstract </em><code class="sig-name descname">names</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tuple[str, ...]<a class="reference internal" href="../_modules/espnet2/train/dataset.html#AbsDataset.names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AbsDataset.names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="espnet2.train.dataset.AdapterForLabelScpReader">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">AdapterForLabelScpReader</code><span class="sig-paren">(</span><em class="sig-param">loader</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#AdapterForLabelScpReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AdapterForLabelScpReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code></p>
+<dl class="method">
+<dt id="espnet2.train.dataset.AdapterForLabelScpReader.keys">
+<code class="sig-name descname">keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; a set-like object providing a view on D's keys<a class="reference internal" href="../_modules/espnet2/train/dataset.html#AdapterForLabelScpReader.keys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AdapterForLabelScpReader.keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="espnet2.train.dataset.AdapterForSingingScoreScpReader">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">AdapterForSingingScoreScpReader</code><span class="sig-paren">(</span><em class="sig-param">loader</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#AdapterForSingingScoreScpReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AdapterForSingingScoreScpReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code></p>
+<dl class="method">
+<dt id="espnet2.train.dataset.AdapterForSingingScoreScpReader.keys">
+<code class="sig-name descname">keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; a set-like object providing a view on D's keys<a class="reference internal" href="../_modules/espnet2/train/dataset.html#AdapterForSingingScoreScpReader.keys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AdapterForSingingScoreScpReader.keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="espnet2.train.dataset.AdapterForSoundScpReader">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">AdapterForSoundScpReader</code><span class="sig-paren">(</span><em class="sig-param">loader</em>, <em class="sig-param">dtype=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#AdapterForSoundScpReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AdapterForSoundScpReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code></p>
+<dl class="method">
+<dt id="espnet2.train.dataset.AdapterForSoundScpReader.keys">
+<code class="sig-name descname">keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; a set-like object providing a view on D's keys<a class="reference internal" href="../_modules/espnet2/train/dataset.html#AdapterForSoundScpReader.keys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.AdapterForSoundScpReader.keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="espnet2.train.dataset.ESPnetDataset">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">ESPnetDataset</code><span class="sig-paren">(</span><em class="sig-param">path_name_type_list: Collection[Tuple[str, str, str]], preprocess: Callable[[str, Dict[str, numpy.ndarray]], Dict[str, numpy.ndarray]] = None, float_dtype: str = 'float32', int_dtype: str = 'long', max_cache_size: Union[float, int, str] = 0.0, max_cache_fd: int = 0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#ESPnetDataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.ESPnetDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#espnet2.train.dataset.AbsDataset" title="espnet2.train.dataset.AbsDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">espnet2.train.dataset.AbsDataset</span></code></a></p>
+<p>Pytorch Dataset class for ESPNet.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">ESPnetDataset</span><span class="p">([(</span><span class="s1">&#39;wav.scp&#39;</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="s1">&#39;sound&#39;</span><span class="p">),</span>
+<span class="gp">... </span>                         <span class="p">(</span><span class="s1">&#39;token_int&#39;</span><span class="p">,</span> <span class="s1">&#39;output&#39;</span><span class="p">,</span> <span class="s1">&#39;text_int&#39;</span><span class="p">)],</span>
+<span class="gp">... </span>                        <span class="p">)</span>
+<span class="gp">... </span><span class="n">uttid</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="s1">&#39;uttid&#39;</span><span class="p">]</span>
+<span class="go">{&#39;input&#39;: per_utt_array, &#39;output&#39;: per_utt_array}</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="espnet2.train.dataset.ESPnetDataset.has_name">
+<code class="sig-name descname">has_name</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/espnet2/train/dataset.html#ESPnetDataset.has_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.ESPnetDataset.has_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="espnet2.train.dataset.ESPnetDataset.names">
+<code class="sig-name descname">names</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tuple[str, ...]<a class="reference internal" href="../_modules/espnet2/train/dataset.html#ESPnetDataset.names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.ESPnetDataset.names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="espnet2.train.dataset.H5FileWrapper">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">H5FileWrapper</code><span class="sig-paren">(</span><em class="sig-param">path: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#H5FileWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.H5FileWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.dataset.kaldi_loader">
+<code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">kaldi_loader</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">float_dtype=None</em>, <em class="sig-param">max_cache_fd: int = 0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#kaldi_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.kaldi_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.dataset.label_loader">
+<code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">label_loader</code><span class="sig-paren">(</span><em class="sig-param">path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#label_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.label_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.dataset.multi_columns_sound_loader">
+<code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">multi_columns_sound_loader</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">float_dtype=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#multi_columns_sound_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.multi_columns_sound_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.dataset.rand_int_loader">
+<code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">rand_int_loader</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">loader_type</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#rand_int_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.rand_int_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.dataset.score_loader">
+<code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">score_loader</code><span class="sig-paren">(</span><em class="sig-param">path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#score_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.score_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.dataset.sound_loader">
+<code class="sig-prename descclassname">espnet2.train.dataset.</code><code class="sig-name descname">sound_loader</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">float_dtype=None</em>, <em class="sig-param">multi_columns=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/dataset.html#sound_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.dataset.sound_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="espnet2-train-gan-trainer-1">
 <span id="espnet2-train-gan-trainer"></span><h2>espnet2.train.gan_trainer<a class="headerlink" href="#espnet2-train-gan-trainer-1" title="Permalink to this headline">¶</a></h2>
@@ -420,6 +534,38 @@ espnet.train.abs_gan_espnet_model.AbsGANESPnetModel.</p>
 </section>
 <section id="espnet2-train-iterable-dataset-1">
 <span id="espnet2-train-iterable-dataset"></span><h2>espnet2.train.iterable_dataset<a class="headerlink" href="#espnet2-train-iterable-dataset-1" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-espnet2.train.iterable_dataset"></span><p>Iterable dataset module.</p>
+<dl class="class">
+<dt id="espnet2.train.iterable_dataset.IterableESPnetDataset">
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.train.iterable_dataset.</code><code class="sig-name descname">IterableESPnetDataset</code><span class="sig-paren">(</span><em class="sig-param">path_name_type_list: Collection[Tuple[str, str, str]], preprocess: Callable[[str, Dict[str, numpy.ndarray]], Dict[str, numpy.ndarray]] = None, float_dtype: str = 'float32', int_dtype: str = 'long', key_file: str = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/iterable_dataset.html#IterableESPnetDataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.iterable_dataset.IterableESPnetDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.IterableDataset</span></code></p>
+<p>Pytorch Dataset class for ESPNet.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">IterableESPnetDataset</span><span class="p">([(</span><span class="s1">&#39;wav.scp&#39;</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="s1">&#39;sound&#39;</span><span class="p">),</span>
+<span class="gp">... </span>                                 <span class="p">(</span><span class="s1">&#39;token_int&#39;</span><span class="p">,</span> <span class="s1">&#39;output&#39;</span><span class="p">,</span> <span class="s1">&#39;text_int&#39;</span><span class="p">)],</span>
+<span class="gp">... </span>                               <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">uid</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">data</span>
+<span class="go">{&#39;input&#39;: per_utt_array, &#39;output&#39;: per_utt_array}</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="espnet2.train.iterable_dataset.IterableESPnetDataset.has_name">
+<code class="sig-name descname">has_name</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/espnet2/train/iterable_dataset.html#IterableESPnetDataset.has_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.iterable_dataset.IterableESPnetDataset.has_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="espnet2.train.iterable_dataset.IterableESPnetDataset.names">
+<code class="sig-name descname">names</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Tuple[str, ...]<a class="reference internal" href="../_modules/espnet2/train/iterable_dataset.html#IterableESPnetDataset.names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.iterable_dataset.IterableESPnetDataset.names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="espnet2.train.iterable_dataset.load_kaldi">
+<code class="sig-prename descclassname">espnet2.train.iterable_dataset.</code><code class="sig-name descname">load_kaldi</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/train/iterable_dataset.html#load_kaldi"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.train.iterable_dataset.load_kaldi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="espnet2-train-distributed-utils-1">
 <span id="espnet2-train-distributed-utils"></span><h2>espnet2.train.distributed_utils<a class="headerlink" href="#espnet2-train-distributed-utils-1" title="Permalink to this headline">¶</a></h2>

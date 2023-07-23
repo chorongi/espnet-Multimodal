@@ -290,17 +290,6 @@ espnet2.bin.svs_train
     :show-inheritance:
 
 
-.. _espnet2.bin.avsr_train:
-
-espnet2.bin.avsr_train
-----------------------
-
-.. automodule:: espnet2.bin.avsr_train
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
 .. _espnet2.bin.asr_inference_maskctc:
 
 espnet2.bin.asr_inference_maskctc

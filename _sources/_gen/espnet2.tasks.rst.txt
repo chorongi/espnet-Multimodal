@@ -15,17 +15,6 @@ espnet2.tasks.svs
     :show-inheritance:
 
 
-.. _espnet2.tasks.avsr:
-
-espnet2.tasks.avsr
-------------------
-
-.. automodule:: espnet2.tasks.avsr
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
 .. _espnet2.tasks.enh_s2t:
 
 espnet2.tasks.enh_s2t

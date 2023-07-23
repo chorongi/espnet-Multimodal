@@ -15,17 +15,6 @@ espnet2.fileio.datadir_writer
     :show-inheritance:
 
 
-.. _espnet2.fileio.vision_dataset:
-
-espnet2.fileio.vision_dataset
------------------------------
-
-.. automodule:: espnet2.fileio.vision_dataset
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
 .. _espnet2.fileio.score_scp:
 
 espnet2.fileio.score_scp
