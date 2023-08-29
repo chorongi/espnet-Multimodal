@@ -340,7 +340,7 @@
 <span id="espnet2-uasr-loss-abs-loss"></span><h2>espnet2.uasr.loss.abs_loss<a class="headerlink" href="#espnet2-uasr-loss-abs-loss-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.uasr.loss.abs_loss"></span><dl class="class">
 <dt id="espnet2.uasr.loss.abs_loss.AbsUASRLoss">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.loss.abs_loss.</code><code class="sig-name descname">AbsUASRLoss</code><a class="reference internal" href="../_modules/espnet2/uasr/loss/abs_loss.html#AbsUASRLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.loss.abs_loss.AbsUASRLoss" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.loss.abs_loss.</code><code class="sig-name descname">AbsUASRLoss</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/uasr/loss/abs_loss.html#AbsUASRLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.loss.abs_loss.AbsUASRLoss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Base class for all Diarization loss modules.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -497,7 +497,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-uasr-generator-abs-generator"></span><h2>espnet2.uasr.generator.abs_generator<a class="headerlink" href="#espnet2-uasr-generator-abs-generator-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.uasr.generator.abs_generator"></span><dl class="class">
 <dt id="espnet2.uasr.generator.abs_generator.AbsGenerator">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.generator.abs_generator.</code><code class="sig-name descname">AbsGenerator</code><a class="reference internal" href="../_modules/espnet2/uasr/generator/abs_generator.html#AbsGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.generator.abs_generator.AbsGenerator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.generator.abs_generator.</code><code class="sig-name descname">AbsGenerator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/uasr/generator/abs_generator.html#AbsGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.generator.abs_generator.AbsGenerator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -572,7 +572,7 @@ it too easy for the discriminator. So, the segmenter here is
 to merge frames with a similar prediction from the generator output.</p>
 <dl class="class">
 <dt id="espnet2.uasr.segmenter.abs_segmenter.AbsSegmenter">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.segmenter.abs_segmenter.</code><code class="sig-name descname">AbsSegmenter</code><a class="reference internal" href="../_modules/espnet2/uasr/segmenter/abs_segmenter.html#AbsSegmenter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.segmenter.abs_segmenter.AbsSegmenter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.segmenter.abs_segmenter.</code><code class="sig-name descname">AbsSegmenter</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/uasr/segmenter/abs_segmenter.html#AbsSegmenter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.segmenter.abs_segmenter.AbsSegmenter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -592,7 +592,7 @@ to merge frames with a similar prediction from the generator output.</p>
 <span id="espnet2-uasr-discriminator-abs-discriminator"></span><h2>espnet2.uasr.discriminator.abs_discriminator<a class="headerlink" href="#espnet2-uasr-discriminator-abs-discriminator-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.uasr.discriminator.abs_discriminator"></span><dl class="class">
 <dt id="espnet2.uasr.discriminator.abs_discriminator.AbsDiscriminator">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.discriminator.abs_discriminator.</code><code class="sig-name descname">AbsDiscriminator</code><a class="reference internal" href="../_modules/espnet2/uasr/discriminator/abs_discriminator.html#AbsDiscriminator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.discriminator.abs_discriminator.AbsDiscriminator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.uasr.discriminator.abs_discriminator.</code><code class="sig-name descname">AbsDiscriminator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/uasr/discriminator/abs_discriminator.html#AbsDiscriminator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.uasr.discriminator.abs_discriminator.AbsDiscriminator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">

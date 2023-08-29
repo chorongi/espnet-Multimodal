@@ -786,7 +786,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-asr-frontend-abs-frontend"></span><h2>espnet2.asr.frontend.abs_frontend<a class="headerlink" href="#espnet2-asr-frontend-abs-frontend-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.asr.frontend.abs_frontend"></span><dl class="class">
 <dt id="espnet2.asr.frontend.abs_frontend.AbsFrontend">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.frontend.abs_frontend.</code><code class="sig-name descname">AbsFrontend</code><a class="reference internal" href="../_modules/espnet2/asr/frontend/abs_frontend.html#AbsFrontend"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.frontend.abs_frontend.AbsFrontend" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.frontend.abs_frontend.</code><code class="sig-name descname">AbsFrontend</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/frontend/abs_frontend.html#AbsFrontend"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.frontend.abs_frontend.AbsFrontend" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -882,7 +882,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-asr-preencoder-abs-preencoder"></span><h2>espnet2.asr.preencoder.abs_preencoder<a class="headerlink" href="#espnet2-asr-preencoder-abs-preencoder-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.asr.preencoder.abs_preencoder"></span><dl class="class">
 <dt id="espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.preencoder.abs_preencoder.</code><code class="sig-name descname">AbsPreEncoder</code><a class="reference internal" href="../_modules/espnet2/asr/preencoder/abs_preencoder.html#AbsPreEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.preencoder.abs_preencoder.</code><code class="sig-name descname">AbsPreEncoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/preencoder/abs_preencoder.html#AbsPreEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -1427,7 +1427,7 @@ y.shape` is (batch, maxlen_out, token)</p>
 <span id="espnet2-asr-decoder-abs-decoder"></span><h2>espnet2.asr.decoder.abs_decoder<a class="headerlink" href="#espnet2-asr-decoder-abs-decoder-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.asr.decoder.abs_decoder"></span><dl class="class">
 <dt id="espnet2.asr.decoder.abs_decoder.AbsDecoder">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.decoder.abs_decoder.</code><code class="sig-name descname">AbsDecoder</code><a class="reference internal" href="../_modules/espnet2/asr/decoder/abs_decoder.html#AbsDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.decoder.abs_decoder.AbsDecoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.decoder.abs_decoder.</code><code class="sig-name descname">AbsDecoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/decoder/abs_decoder.html#AbsDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.decoder.abs_decoder.AbsDecoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <a class="reference internal" href="espnet.nets.html#espnet.nets.scorer_interface.ScorerInterface" title="espnet.nets.scorer_interface.ScorerInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">espnet.nets.scorer_interface.ScorerInterface</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -3592,10 +3592,37 @@ output.</p>
 <dl class="method">
 <dt id="espnet2.asr.transducer.rnnt_multi_blank.utils.cpu_utils.cpu_rnnt.LogSoftmaxGradModification.forward">
 <em class="property">static </em><code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">ctx</em>, <em class="sig-param">acts</em>, <em class="sig-param">clamp</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/transducer/rnnt_multi_blank/utils/cpu_utils/cpu_rnnt.html#LogSoftmaxGradModification.forward"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.transducer.rnnt_multi_blank.utils.cpu_utils.cpu_rnnt.LogSoftmaxGradModification.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs the operation.</p>
-<p>This function is to be overridden by all subclasses.</p>
-<p>It must accept a context ctx as the first argument, followed by any
-number of arguments (tensors or other types).</p>
+<dd><p>This function is to be overridden by all subclasses. There are two ways
+to define forward:</p>
+<p>Usage 1 (Combined forward and ctx):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@staticmethod</span>
+<span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>It must accept a context ctx as the first argument, followed by any
+number of arguments (tensors or other types).</p></li>
+<li><p>See <span class="xref std std-ref">combining-forward-context</span> for more details</p></li>
+</ul>
+<p>Usage 2 (Separate forward and ctx):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@staticmethod</span>
+<span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="nd">@staticmethod</span>
+<span class="k">def</span> <span class="nf">setup_context</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">inputs</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span> <span class="n">output</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The forward no longer accepts a ctx argument.</p></li>
+<li><p>Instead, you must also override the <code class="xref py py-meth docutils literal notranslate"><span class="pre">torch.autograd.Function.setup_context()</span></code>
+staticmethod to handle setting up the <code class="docutils literal notranslate"><span class="pre">ctx</span></code> object.
+<code class="docutils literal notranslate"><span class="pre">output</span></code> is the output of the forward, <code class="docutils literal notranslate"><span class="pre">inputs</span></code> are a Tuple of inputs
+to the forward.</p></li>
+<li><p>See <span class="xref std std-ref">extending-autograd</span> for more details</p></li>
+</ul>
 <p>The context can be used to store arbitrary data that can be then
 retrieved during the backward pass. Tensors should not be stored
 directly on <cite>ctx</cite> (though this is not currently enforced for
@@ -4129,7 +4156,7 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="class">
 <dt id="espnet2.asr.state_spaces.components.SquaredReLU">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.state_spaces.components.</code><code class="sig-name descname">SquaredReLU</code><a class="reference internal" href="../_modules/espnet2/asr/state_spaces/components.html#SquaredReLU"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.state_spaces.components.SquaredReLU" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.state_spaces.components.</code><code class="sig-name descname">SquaredReLU</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/state_spaces/components.html#SquaredReLU"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.state_spaces.components.SquaredReLU" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -4569,7 +4596,7 @@ this method should generally have signature
 <span class="target" id="module-espnet2.asr.state_spaces.s4"></span><p>Standalone version of Structured (Sequence) State Space (S4) model.</p>
 <dl class="class">
 <dt id="espnet2.asr.state_spaces.s4.OptimModule">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.state_spaces.s4.</code><code class="sig-name descname">OptimModule</code><a class="reference internal" href="../_modules/espnet2/asr/state_spaces/s4.html#OptimModule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.state_spaces.s4.OptimModule" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.state_spaces.s4.</code><code class="sig-name descname">OptimModule</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/state_spaces/s4.html#OptimModule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.state_spaces.s4.OptimModule" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Interface for Module that allows registering buffers/parameters with configurable optimizer hyperparameters. # noqa</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -4933,7 +4960,7 @@ H: number of independent SSM copies</p>
 
 <dl class="class">
 <dt id="espnet2.asr.state_spaces.base.SequenceModule">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.state_spaces.base.</code><code class="sig-name descname">SequenceModule</code><a class="reference internal" href="../_modules/espnet2/asr/state_spaces/base.html#SequenceModule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.state_spaces.base.SequenceModule" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.state_spaces.base.</code><code class="sig-name descname">SequenceModule</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/state_spaces/base.html#SequenceModule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.state_spaces.base.SequenceModule" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Abstract sequence model class.</p>
 <p>All models must adhere to this interface</p>
@@ -5853,7 +5880,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-asr-encoder-abs-encoder"></span><h2>espnet2.asr.encoder.abs_encoder<a class="headerlink" href="#espnet2-asr-encoder-abs-encoder-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.asr.encoder.abs_encoder"></span><dl class="class">
 <dt id="espnet2.asr.encoder.abs_encoder.AbsEncoder">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.encoder.abs_encoder.</code><code class="sig-name descname">AbsEncoder</code><a class="reference internal" href="../_modules/espnet2/asr/encoder/abs_encoder.html#AbsEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.encoder.abs_encoder.AbsEncoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.encoder.abs_encoder.</code><code class="sig-name descname">AbsEncoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/encoder/abs_encoder.html#AbsEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.encoder.abs_encoder.AbsEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -6355,7 +6382,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-asr-specaug-abs-specaug"></span><h2>espnet2.asr.specaug.abs_specaug<a class="headerlink" href="#espnet2-asr-specaug-abs-specaug-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.asr.specaug.abs_specaug"></span><dl class="class">
 <dt id="espnet2.asr.specaug.abs_specaug.AbsSpecAug">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.specaug.abs_specaug.</code><code class="sig-name descname">AbsSpecAug</code><a class="reference internal" href="../_modules/espnet2/asr/specaug/abs_specaug.html#AbsSpecAug"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.specaug.abs_specaug.AbsSpecAug" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.specaug.abs_specaug.</code><code class="sig-name descname">AbsSpecAug</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/specaug/abs_specaug.html#AbsSpecAug"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.specaug.abs_specaug.AbsSpecAug" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Abstract class for the augmentation of spectrogram</p>
 <p>The process-flow:</p>
@@ -6452,7 +6479,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-asr-postencoder-abs-postencoder"></span><h2>espnet2.asr.postencoder.abs_postencoder<a class="headerlink" href="#espnet2-asr-postencoder-abs-postencoder-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.asr.postencoder.abs_postencoder"></span><dl class="class">
 <dt id="espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.postencoder.abs_postencoder.</code><code class="sig-name descname">AbsPostEncoder</code><a class="reference internal" href="../_modules/espnet2/asr/postencoder/abs_postencoder.html#AbsPostEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.asr.postencoder.abs_postencoder.</code><code class="sig-name descname">AbsPostEncoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/asr/postencoder/abs_postencoder.html#AbsPostEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">

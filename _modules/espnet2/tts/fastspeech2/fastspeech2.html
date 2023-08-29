@@ -881,7 +881,12 @@
         <span class="c1"># forward decoder</span>
         <span class="k">if</span> <span class="n">olens</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">is_inference</span><span class="p">:</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_factor</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-                <span class="n">olens_in</span> <span class="o">=</span> <span class="n">olens</span><span class="o">.</span><span class="n">new</span><span class="p">([</span><span class="n">olen</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_factor</span> <span class="k">for</span> <span class="n">olen</span> <span class="ow">in</span> <span class="n">olens</span><span class="p">])</span>
+                <span class="n">olens_in</span> <span class="o">=</span> <span class="n">olens</span><span class="o">.</span><span class="n">new</span><span class="p">(</span>
+                    <span class="p">[</span>
+                        <span class="n">torch</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">olen</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_factor</span><span class="p">,</span> <span class="n">rounding_mode</span><span class="o">=</span><span class="s2">&quot;trunc&quot;</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">olen</span> <span class="ow">in</span> <span class="n">olens</span>
+                    <span class="p">]</span>
+                <span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">olens_in</span> <span class="o">=</span> <span class="n">olens</span>
             <span class="n">h_masks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_source_mask</span><span class="p">(</span><span class="n">olens_in</span><span class="p">)</span>

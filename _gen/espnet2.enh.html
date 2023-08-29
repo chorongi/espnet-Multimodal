@@ -269,7 +269,7 @@
 <span id="espnet2-enh-abs-enh"></span><h2>espnet2.enh.abs_enh<a class="headerlink" href="#espnet2-enh-abs-enh-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.abs_enh"></span><dl class="class">
 <dt id="espnet2.enh.abs_enh.AbsEnhancement">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.abs_enh.</code><code class="sig-name descname">AbsEnhancement</code><a class="reference internal" href="../_modules/espnet2/enh/abs_enh.html#AbsEnhancement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.abs_enh.AbsEnhancement" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.abs_enh.</code><code class="sig-name descname">AbsEnhancement</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/abs_enh.html#AbsEnhancement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.abs_enh.AbsEnhancement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -900,7 +900,7 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="class">
 <dt id="espnet2.enh.separator.tfgridnet_separator.TFGridNet">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.separator.tfgridnet_separator.</code><code class="sig-name descname">TFGridNet</code><span class="sig-paren">(</span><em class="sig-param">input_dim</em>, <em class="sig-param">n_srcs=2</em>, <em class="sig-param">n_fft=128</em>, <em class="sig-param">stride=64</em>, <em class="sig-param">window='hann'</em>, <em class="sig-param">n_imics=1</em>, <em class="sig-param">n_layers=6</em>, <em class="sig-param">lstm_hidden_units=192</em>, <em class="sig-param">attn_n_head=4</em>, <em class="sig-param">attn_approx_qk_dim=512</em>, <em class="sig-param">emb_dim=48</em>, <em class="sig-param">emb_ks=4</em>, <em class="sig-param">emb_hs=1</em>, <em class="sig-param">activation='prelu'</em>, <em class="sig-param">eps=1e-05</em>, <em class="sig-param">use_builtin_complex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/separator/tfgridnet_separator.html#TFGridNet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.separator.tfgridnet_separator.TFGridNet" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.separator.tfgridnet_separator.</code><code class="sig-name descname">TFGridNet</code><span class="sig-paren">(</span><em class="sig-param">input_dim</em>, <em class="sig-param">n_srcs=2</em>, <em class="sig-param">n_fft=128</em>, <em class="sig-param">stride=64</em>, <em class="sig-param">window='hann'</em>, <em class="sig-param">n_imics=1</em>, <em class="sig-param">n_layers=6</em>, <em class="sig-param">lstm_hidden_units=192</em>, <em class="sig-param">attn_n_head=4</em>, <em class="sig-param">attn_approx_qk_dim=512</em>, <em class="sig-param">emb_dim=48</em>, <em class="sig-param">emb_ks=4</em>, <em class="sig-param">emb_hs=1</em>, <em class="sig-param">activation='prelu'</em>, <em class="sig-param">eps=1e-05</em>, <em class="sig-param">use_builtin_complex=False</em>, <em class="sig-param">ref_channel=-1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/separator/tfgridnet_separator.html#TFGridNet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.separator.tfgridnet_separator.TFGridNet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#espnet2.enh.separator.abs_separator.AbsSeparator" title="espnet2.enh.separator.abs_separator.AbsSeparator"><code class="xref py py-class docutils literal notranslate"><span class="pre">espnet2.enh.separator.abs_separator.AbsSeparator</span></code></a></p>
 <p>Offline TFGridNet</p>
 <p>Reference:
@@ -1586,7 +1586,7 @@ others predicted data, e.g. masks: OrderedDict[</p>
 <span id="espnet2-enh-separator-abs-separator"></span><h2>espnet2.enh.separator.abs_separator<a class="headerlink" href="#espnet2-enh-separator-abs-separator-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.separator.abs_separator"></span><dl class="class">
 <dt id="espnet2.enh.separator.abs_separator.AbsSeparator">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.separator.abs_separator.</code><code class="sig-name descname">AbsSeparator</code><a class="reference internal" href="../_modules/espnet2/enh/separator/abs_separator.html#AbsSeparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.separator.abs_separator.AbsSeparator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.separator.abs_separator.</code><code class="sig-name descname">AbsSeparator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/separator/abs_separator.html#AbsSeparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.separator.abs_separator.AbsSeparator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -2159,7 +2159,7 @@ others predicted data, e.g. masks: OrderedDict[</p>
 <span id="espnet2-enh-decoder-abs-decoder"></span><h2>espnet2.enh.decoder.abs_decoder<a class="headerlink" href="#espnet2-enh-decoder-abs-decoder-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.decoder.abs_decoder"></span><dl class="class">
 <dt id="espnet2.enh.decoder.abs_decoder.AbsDecoder">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.decoder.abs_decoder.</code><code class="sig-name descname">AbsDecoder</code><a class="reference internal" href="../_modules/espnet2/enh/decoder/abs_decoder.html#AbsDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.decoder.abs_decoder.AbsDecoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.decoder.abs_decoder.</code><code class="sig-name descname">AbsDecoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/decoder/abs_decoder.html#AbsDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.decoder.abs_decoder.AbsDecoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -2404,7 +2404,7 @@ others: dict, in this PIT solver, permutation order will be returned</p>
 <span id="espnet2-enh-loss-wrappers-abs-wrapper"></span><h2>espnet2.enh.loss.wrappers.abs_wrapper<a class="headerlink" href="#espnet2-enh-loss-wrappers-abs-wrapper-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.loss.wrappers.abs_wrapper"></span><dl class="class">
 <dt id="espnet2.enh.loss.wrappers.abs_wrapper.AbsLossWrapper">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.loss.wrappers.abs_wrapper.</code><code class="sig-name descname">AbsLossWrapper</code><a class="reference internal" href="../_modules/espnet2/enh/loss/wrappers/abs_wrapper.html#AbsLossWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.loss.wrappers.abs_wrapper.AbsLossWrapper" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.loss.wrappers.abs_wrapper.</code><code class="sig-name descname">AbsLossWrapper</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/loss/wrappers/abs_wrapper.html#AbsLossWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.loss.wrappers.abs_wrapper.AbsLossWrapper" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Base class for all Enhancement loss wrapper modules.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -3127,7 +3127,7 @@ Li et al 2020; <a class="reference external" href="https://arxiv.org/abs/2008.11
 <span id="espnet2-enh-loss-criterions-abs-loss"></span><h2>espnet2.enh.loss.criterions.abs_loss<a class="headerlink" href="#espnet2-enh-loss-criterions-abs-loss-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.loss.criterions.abs_loss"></span><dl class="class">
 <dt id="espnet2.enh.loss.criterions.abs_loss.AbsEnhLoss">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.loss.criterions.abs_loss.</code><code class="sig-name descname">AbsEnhLoss</code><a class="reference internal" href="../_modules/espnet2/enh/loss/criterions/abs_loss.html#AbsEnhLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.loss.criterions.abs_loss.AbsEnhLoss" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.loss.criterions.abs_loss.</code><code class="sig-name descname">AbsEnhLoss</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/loss/criterions/abs_loss.html#AbsEnhLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.loss.criterions.abs_loss.AbsEnhLoss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Base class for all Enhancement loss modules.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -3165,7 +3165,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-enh-encoder-abs-encoder"></span><h2>espnet2.enh.encoder.abs_encoder<a class="headerlink" href="#espnet2-enh-encoder-abs-encoder-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.encoder.abs_encoder"></span><dl class="class">
 <dt id="espnet2.enh.encoder.abs_encoder.AbsEncoder">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.encoder.abs_encoder.</code><code class="sig-name descname">AbsEncoder</code><a class="reference internal" href="../_modules/espnet2/enh/encoder/abs_encoder.html#AbsEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.encoder.abs_encoder.AbsEncoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.encoder.abs_encoder.</code><code class="sig-name descname">AbsEncoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/encoder/abs_encoder.html#AbsEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.encoder.abs_encoder.AbsEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -5015,6 +5015,11 @@ Tensor of shape (batch, time, feature_dim)</p>
 <dd></dd></dl>
 
 <dl class="function">
+<dt id="espnet2.enh.layers.complex_utils.to_complex">
+<code class="sig-prename descclassname">espnet2.enh.layers.complex_utils.</code><code class="sig-name descname">to_complex</code><span class="sig-paren">(</span><em class="sig-param">c</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/layers/complex_utils.html#to_complex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.layers.complex_utils.to_complex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
 <dt id="espnet2.enh.layers.complex_utils.to_double">
 <code class="sig-prename descclassname">espnet2.enh.layers.complex_utils.</code><code class="sig-name descname">to_double</code><span class="sig-paren">(</span><em class="sig-param">c</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/layers/complex_utils.html#to_double"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.layers.complex_utils.to_double" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -6526,7 +6531,7 @@ ilens: (B,)</p>
 <span id="espnet2-enh-extractor-abs-extractor"></span><h2>espnet2.enh.extractor.abs_extractor<a class="headerlink" href="#espnet2-enh-extractor-abs-extractor-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.enh.extractor.abs_extractor"></span><dl class="class">
 <dt id="espnet2.enh.extractor.abs_extractor.AbsExtractor">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.extractor.abs_extractor.</code><code class="sig-name descname">AbsExtractor</code><a class="reference internal" href="../_modules/espnet2/enh/extractor/abs_extractor.html#AbsExtractor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.extractor.abs_extractor.AbsExtractor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.enh.extractor.abs_extractor.</code><code class="sig-name descname">AbsExtractor</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/enh/extractor/abs_extractor.html#AbsExtractor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.enh.extractor.abs_extractor.AbsExtractor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">

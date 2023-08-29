@@ -233,7 +233,7 @@
 <span class="target" id="module-espnet2.tts.abs_tts"></span><p>Text-to-speech abstrast class.</p>
 <dl class="class">
 <dt id="espnet2.tts.abs_tts.AbsTTS">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.abs_tts.</code><code class="sig-name descname">AbsTTS</code><a class="reference internal" href="../_modules/espnet2/tts/abs_tts.html#AbsTTS"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.abs_tts.AbsTTS" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.abs_tts.</code><code class="sig-name descname">AbsTTS</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/tts/abs_tts.html#AbsTTS"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.abs_tts.AbsTTS" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>TTS abstract class.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -1258,7 +1258,7 @@ states (batch, time, mels).</p></li>
 <span id="espnet2-tts-prodiff-denoiser"></span><h2>espnet2.tts.prodiff.denoiser<a class="headerlink" href="#espnet2-tts-prodiff-denoiser-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.tts.prodiff.denoiser"></span><dl class="class">
 <dt id="espnet2.tts.prodiff.denoiser.Mish">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.prodiff.denoiser.</code><code class="sig-name descname">Mish</code><a class="reference internal" href="../_modules/espnet2/tts/prodiff/denoiser.html#Mish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.prodiff.denoiser.Mish" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.prodiff.denoiser.</code><code class="sig-name descname">Mish</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/tts/prodiff/denoiser.html#Mish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.prodiff.denoiser.Mish" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Mish Activation Function.</p>
 <p>Introduced in <a href="#system-message-1"><span class="problematic" id="problematic-1">`Mish: A Self Regularized Non-Monotonic Activation Function`_</span></a>.</p>
@@ -1645,7 +1645,7 @@ registered hooks while the latter silently ignores them.</p>
 <span id="espnet2-tts-feats-extract-abs-feats-extract"></span><h2>espnet2.tts.feats_extract.abs_feats_extract<a class="headerlink" href="#espnet2-tts-feats-extract-abs-feats-extract-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.tts.feats_extract.abs_feats_extract"></span><dl class="class">
 <dt id="espnet2.tts.feats_extract.abs_feats_extract.AbsFeatsExtract">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.feats_extract.abs_feats_extract.</code><code class="sig-name descname">AbsFeatsExtract</code><a class="reference internal" href="../_modules/espnet2/tts/feats_extract/abs_feats_extract.html#AbsFeatsExtract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.feats_extract.abs_feats_extract.AbsFeatsExtract" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.feats_extract.abs_feats_extract.</code><code class="sig-name descname">AbsFeatsExtract</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/tts/feats_extract/abs_feats_extract.html#AbsFeatsExtract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.feats_extract.abs_feats_extract.AbsFeatsExtract" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 <dl class="method">
@@ -1869,7 +1869,7 @@ for details, see models/yin.py or eq. (1) and (2)</p></li>
 <span id="espnet2-tts-utils-init"></span><h2>espnet2.tts.utils.__init__<a class="headerlink" href="#espnet2-tts-utils-init-1" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-espnet2.tts.utils.__init__"></span><dl class="class">
 <dt id="espnet2.tts.utils.__init__.DurationCalculator">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.utils.__init__.</code><code class="sig-name descname">DurationCalculator</code><a class="reference internal" href="../_modules/espnet2/tts/utils/duration_calculator.html#DurationCalculator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.utils.__init__.DurationCalculator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.utils.__init__.</code><code class="sig-name descname">DurationCalculator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/tts/utils/duration_calculator.html#DurationCalculator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.utils.__init__.DurationCalculator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Duration calculator module.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -1925,7 +1925,7 @@ Tensor: Focus rate value.</p>
 <span class="target" id="module-espnet2.tts.utils.duration_calculator"></span><p>Duration calculator for ESPnet2.</p>
 <dl class="class">
 <dt id="espnet2.tts.utils.duration_calculator.DurationCalculator">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.utils.duration_calculator.</code><code class="sig-name descname">DurationCalculator</code><a class="reference internal" href="../_modules/espnet2/tts/utils/duration_calculator.html#DurationCalculator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.utils.duration_calculator.DurationCalculator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.tts.utils.duration_calculator.</code><code class="sig-name descname">DurationCalculator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/tts/utils/duration_calculator.html#DurationCalculator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.tts.utils.duration_calculator.DurationCalculator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Duration calculator module.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>

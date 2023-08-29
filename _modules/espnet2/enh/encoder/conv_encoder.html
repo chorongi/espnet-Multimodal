@@ -255,7 +255,9 @@
         <span class="n">feature</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
         <span class="n">feature</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
-        <span class="n">flens</span> <span class="o">=</span> <span class="p">(</span><span class="n">ilens</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">kernel_size</span><span class="p">)</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">stride</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">flens</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">torch</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">ilens</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">kernel_size</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">stride</span><span class="p">,</span> <span class="n">rounding_mode</span><span class="o">=</span><span class="s2">&quot;trunc&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="p">)</span>
 
         <span class="k">return</span> <span class="n">feature</span><span class="p">,</span> <span class="n">flens</span></div>
 

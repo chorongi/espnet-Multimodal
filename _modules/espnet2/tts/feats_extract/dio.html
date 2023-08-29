@@ -361,7 +361,7 @@
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">_convert_to_continuous_f0</span><span class="p">(</span><span class="n">f0</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">:</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">f0</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
-            <span class="n">logging</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;All frames seems to be unvoiced.&quot;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;All frames seems to be unvoiced.&quot;</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">f0</span>
 
         <span class="c1"># padding start and end of f0 sequence</span>

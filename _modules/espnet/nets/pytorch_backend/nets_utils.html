@@ -365,7 +365,7 @@
     <span class="c1"># then we use ESPnet-ONNX based implementation for tracable modeling.</span>
     <span class="c1"># otherwise we use the traditional implementation for research use.</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lengths</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-        <span class="n">logging</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
             <span class="s2">&quot;Using make_pad_mask with a list of lengths is not tracable. &quot;</span>
             <span class="o">+</span> <span class="s2">&quot;If you try to trace this function with type(lengths) == list, &quot;</span>
             <span class="o">+</span> <span class="s2">&quot;please change the type of lengths to torch.LongTensor.&quot;</span>
