@@ -326,7 +326,7 @@
 <span class="target" id="module-espnet2.gan_tts.abs_gan_tts"></span><p>GAN-based TTS abstrast class.</p>
 <dl class="class">
 <dt id="espnet2.gan_tts.abs_gan_tts.AbsGANTTS">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.abs_gan_tts.</code><code class="sig-name descname">AbsGANTTS</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/gan_tts/abs_gan_tts.html#AbsGANTTS"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.abs_gan_tts.AbsGANTTS" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.abs_gan_tts.</code><code class="sig-name descname">AbsGANTTS</code><a class="reference internal" href="../_modules/espnet2/gan_tts/abs_gan_tts.html#AbsGANTTS"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.abs_gan_tts.AbsGANTTS" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="espnet2.tts.html#espnet2.tts.abs_tts.AbsTTS" title="espnet2.tts.abs_tts.AbsTTS"><code class="xref py py-class docutils literal notranslate"><span class="pre">espnet2.tts.abs_tts.AbsTTS</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>GAN-based TTS model abstract class.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -592,7 +592,7 @@ Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech<
 <p>This code is based on <a class="reference external" href="https://github.com/jaywalnut310/vits">https://github.com/jaywalnut310/vits</a>.</p>
 <dl class="class">
 <dt id="espnet2.gan_tts.vits.loss.KLDivergenceLoss">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.loss.</code><code class="sig-name descname">KLDivergenceLoss</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/loss.html#KLDivergenceLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.loss.KLDivergenceLoss" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.loss.</code><code class="sig-name descname">KLDivergenceLoss</code><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/loss.html#KLDivergenceLoss"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.loss.KLDivergenceLoss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>KL divergence loss.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -623,7 +623,7 @@ Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech<
 
 <dl class="class">
 <dt id="espnet2.gan_tts.vits.loss.KLDivergenceLossWithoutFlow">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.loss.</code><code class="sig-name descname">KLDivergenceLossWithoutFlow</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/loss.html#KLDivergenceLossWithoutFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.loss.KLDivergenceLossWithoutFlow" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.loss.</code><code class="sig-name descname">KLDivergenceLossWithoutFlow</code><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/loss.html#KLDivergenceLossWithoutFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.loss.KLDivergenceLossWithoutFlow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>KL divergence loss without flow.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -944,7 +944,7 @@ Tensor: Log-determinant tensor for NLL (B,) if not inverse.</p>
 
 <dl class="class">
 <dt id="espnet2.gan_tts.vits.flow.FlipFlow">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.flow.</code><code class="sig-name descname">FlipFlow</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/flow.html#FlipFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.flow.FlipFlow" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.flow.</code><code class="sig-name descname">FlipFlow</code><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/flow.html#FlipFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.flow.FlipFlow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Flip flow module.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
@@ -973,7 +973,7 @@ Tensor: Log-determinant tensor for NLL (B,) if not inverse.</p>
 
 <dl class="class">
 <dt id="espnet2.gan_tts.vits.flow.LogFlow">
-<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.flow.</code><code class="sig-name descname">LogFlow</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/flow.html#LogFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.flow.LogFlow" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">espnet2.gan_tts.vits.flow.</code><code class="sig-name descname">LogFlow</code><a class="reference internal" href="../_modules/espnet2/gan_tts/vits/flow.html#LogFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#espnet2.gan_tts.vits.flow.LogFlow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Log flow module.</p>
 <p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>

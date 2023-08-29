@@ -579,12 +579,7 @@
             <span class="c1"># NOTE(kan-bayashi): length of output for auto-regressive</span>
             <span class="c1"># input will be changed when r &gt; 1</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_factor</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-                <span class="n">olens_in</span> <span class="o">=</span> <span class="n">olens</span><span class="o">.</span><span class="n">new</span><span class="p">(</span>
-                    <span class="p">[</span>
-                        <span class="n">torch</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">olen</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_factor</span><span class="p">,</span> <span class="n">rounding_mode</span><span class="o">=</span><span class="s2">&quot;trunc&quot;</span><span class="p">)</span>
-                        <span class="k">for</span> <span class="n">olen</span> <span class="ow">in</span> <span class="n">olens</span>
-                    <span class="p">]</span>
-                <span class="p">)</span>
+                <span class="n">olens_in</span> <span class="o">=</span> <span class="n">olens</span><span class="o">.</span><span class="n">new</span><span class="p">([</span><span class="n">olen</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">reduction_factor</span> <span class="k">for</span> <span class="n">olen</span> <span class="ow">in</span> <span class="n">olens</span><span class="p">])</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">olens_in</span> <span class="o">=</span> <span class="n">olens</span>
             <span class="n">attn_loss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">attn_loss</span><span class="p">(</span><span class="n">att_ws</span><span class="p">,</span> <span class="n">ilens</span><span class="p">,</span> <span class="n">olens_in</span><span class="p">)</span>
